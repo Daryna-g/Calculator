@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Stopwatch</title>
+</head>
+
+<body>
+	<main id="calculator">
+		<div class="first-row">
+			<input id="display" readonly>
+			<button onclick="clearDisplay()">C</button>
+		</div>
+		<div class="rows">
+			<button class="number-btn">7</button>
+			<button class="number-btn">8</button>
+			<button class="number-btn">9</button>
+			<button class="operator-btn">/</button>
+		</div>
+		<div class="rows">
+			<button class="number-btn">4</button>
+			<button class="number-btn">5</button>
+			<button class="number-btn">6</button>
+			<button class="operator-btn">/</button>
+		</div>
+
+		<div id="keys">
+			<button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+
+			<button class="operator-btn">-</button>
+			<button>4</button>
+			<button>5</button>
+			<button>5</button>
+			<button class="operator-btn">*</button>
+			<button ('1')">1</button>
+			<button ('2')">2</button>
+			<button ('3')">3</button>
+
+			<button ('0')">0</button>
+			<button ('.')">.</button>
+			<button onclick="calculate()">=</button>
+			<button onclick="clearDisplay()">C</button>
+		</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
