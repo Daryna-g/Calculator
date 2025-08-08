@@ -9,40 +9,34 @@
 </head>
 
 <body>
-	<main id="calculator">
+	<main class="calculator-container" id="calculator">
 		<div class="first-row">
 			<input id="display" readonly>
-			<button onclick="clearDisplay()">C</button>
+			<button class="clear-btn btn">C</button>
 		</div>
 		<div class="rows">
-			<button class="number-btn">7</button>
-			<button class="number-btn">8</button>
-			<button class="number-btn">9</button>
-			<button class="operator-btn">/</button>
+			<button class="number-btn btn">7</button>
+			<button class="number-btn btn">8</button>
+			<button class="number-btn btn">9</button>
+			<button class="operator-btn btn">/</button>
 		</div>
 		<div class="rows">
-			<button class="number-btn">4</button>
-			<button class="number-btn">5</button>
-			<button class="number-btn">6</button>
-			<button class="operator-btn">/</button>
+			<button class="number-btn btn">4</button>
+			<button class="number-btn btn">5</button>
+			<button class="number-btn btn">6</button>
+			<button class="operator-btn btn">*</button>
 		</div>
-
-		<div id="keys">
-			<button onclick="appendToDisplay('+')" class="operator-btn">+</button>
-
-			<button class="operator-btn">-</button>
-			<button>4</button>
-			<button>5</button>
-			<button>5</button>
-			<button class="operator-btn">*</button>
-			<button ('1')">1</button>
-			<button ('2')">2</button>
-			<button ('3')">3</button>
-
-			<button ('0')">0</button>
-			<button ('.')">.</button>
-			<button onclick="calculate()">=</button>
-			<button onclick="clearDisplay()">C</button>
+		<div class="rows">
+			<button class="number-btn btn">1</button>
+			<button class="number-btn btn">2</button>
+			<button class="number-btn btn">3</button>
+			<button class="operator-btn btn">-</button>
+		</div>
+		<div class="rows">
+			<button class="desimal-btn btn">.</button>
+			<button class="number-btn btn">0</button>
+			<button class="equal-btn btn">=</button>
+			<button class="operator-btn btn">+</button>
 		</div>
 	</main>
 
