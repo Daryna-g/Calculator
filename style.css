@@ -24,7 +24,7 @@ button {
 	--green-hover: #3cc86d;
 	/* --green: #4cd964; */
 	--gray-btn-hover: #696969;
-	--orange-hover: #ef8f27;
+	--orange-hover: #fea443;
 	--white: #ffffff;
 }
 
@@ -49,14 +49,26 @@ body {
 	padding: 30px;
 	border-radius: 15px;
 	background-color: var(--background-gray);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-input {
+.display {
 	font-size: 24px;
 	width: 265px;
 	border-radius: 10px;
 	padding: 10px;
 	background-color: var(--gray-btn);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
 }
+.previous {
+	font-size: 20px;
+}
+.current {
+	font-size: 30px;
+}
+
 .first-row {
 	display: flex;
 	gap: 20px;
