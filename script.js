@@ -2,6 +2,7 @@
 const clearBtn = document.querySelector(".clear-btn");
 const equalBtn = document.querySelector(".equal-btn");
 const decimalBtn = document.querySelector(".desimal-btn");
+const deleteBtn = document.querySelector(".delete-btn");
 
 const numberBtn = document.querySelectorAll(".number-btn");
 const operatorBtn = document.querySelectorAll(".operator-btn");
@@ -48,6 +49,11 @@ clearBtn.addEventListener('click', () => {
 	currentOperation = null;
 	currentDisplay.textContent = '0';
 	previousDisplay.textContent = '';
+})
+
+deleteBtn.addEventListener('click', () => {
+	currentInput = currentInput.slice(0, -1);
+	currentDisplay.textContent = currentInput || '0';
 })
 
 operatorBtn.forEach(button => {
