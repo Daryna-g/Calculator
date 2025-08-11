@@ -1,4 +1,3 @@
-// document.addEventListener("DOMContentLoaded", () => });
 const clearBtn = document.querySelector(".clear-btn");
 const equalBtn = document.querySelector(".equal-btn");
 const decimalBtn = document.querySelector(".desimal-btn");
