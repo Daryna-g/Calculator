@@ -87,12 +87,10 @@ body {
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
-.number-btn,
-.delete-btn {
+.number-btn {
 	background-color: var(--gray-btn);
 }
-.number-btn:hover,
-.delete-btn:hover {
+.number-btn:hover {
 	background-color: var(--gray-btn-hover);
 }
 .operator-btn {
@@ -102,13 +100,15 @@ body {
 	background-color: var(--orange-hover);
 }
 .desimal-btn,
-.clear-btn{
+.clear-btn,
+.delete-btn {
 	background-color: var(--white);
 	color: var(--background-gray);
 }
 
 .desimal-btn:hover,
-.clear-btn:hover {
+.clear-btn:hover,
+.delete-btn:hover {
 	background-color: var(--grayish-white);
 }
 
@@ -117,4 +117,19 @@ body {
 }
 .equal-btn:hover {
 	background-color: var(--green-hover);
+}
+
+@media (max-width: 600px) {
+	.calculator-container {
+		grid-template-columns: repeat(4, 50px);
+		grid-template-rows: minmax(100px, auto) repeat(5, 50px);
+		padding: 20px;
+		gap: 15px;
+	}
+	.btn {
+		font-size: 24px;
+	}
+	.display {
+		height: 100px;
+	}
 }
